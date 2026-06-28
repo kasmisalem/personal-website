@@ -363,10 +363,10 @@ body{
     }
     /* section one fase */
     .web-definde h2{
-        font-size:40px;
+        font-size:30px;
     }
     .web-definde p{
-        font-size:20px;
+        font-size:15px;
     }
     .square{
         width:70vw;
@@ -378,16 +378,16 @@ body{
     }
     /* section two for me */
     .title-me h1{
-        font-size:35px;
+        font-size:30px;
     }
     .title-list{
-        font-size:25px;
+        font-size:15px;
     }
     .Personal-information {
         justify-content:left;
     }
     .Personal-information ul li{
-        font-size:20px;
+        font-size:10px;
     }
     .Personal-information{
         width:60%;
@@ -398,7 +398,7 @@ body{
     }
     /* section three jobs */
     .title-jobs h2{
-        font-size:35px;
+        font-size:30px;
     }
     .slider{
         width:90vw;
