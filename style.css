@@ -6,6 +6,7 @@
 }
 html{
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 *{
     font-family:'Verdana', 'Geneva', 'Tahoma', 'sans-serif';
@@ -17,7 +18,6 @@ body{
     margin:0;
     display:block;
     background-color:rgba(30, 0, 0, 0.1);
-    overflow-x: hidden;
    
 }
 /* header */
