@@ -1,0 +1,413 @@
+:root{
+    /* color in web */
+    --red-:rgb(86, 0, 0);
+    --red--:rgb(125, 0, 0);
+    --red---:rgb(200,0,0);
+}
+html{
+    scroll-behavior: smooth;
+}
+*{
+    font-family:'Verdana', 'Geneva', 'Tahoma', 'sans-serif';
+    font-size:20px;
+    transition:0.3s;
+}
+body{
+    padding:0;
+    margin:0;
+    display:block;
+    background-color:rgba(30, 0, 0, 0.1);
+    overflow-x: hidden;
+   
+}
+/* header */
+.header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding: 0 20px;
+    background-image:linear-gradient(45deg,rgb(91, 2, 2),black,black,black,rgb(91, 2, 2));
+    color:white;
+    height:110px;
+}
+.logo h3{
+    font-size:25px;
+}
+.list{
+    display:flex;
+    list-style:none;
+    gap:20px;
+    margin-right:30px;
+}
+.list-fa-bars{
+    display:none;
+    z-index:1011;
+}
+.list-fa-mixer{
+    display:none;
+    z-index:1010;
+}
+.items{
+    padding-bottom:5px;
+    border-bottom:1px solid rgba(255, 255, 255, 0);
+}
+.items a {
+    text-decoration: none;
+    color:white;
+    font-size:25px;
+}
+/* body */
+/* fase "section one"*/
+.fase{
+    width:100%;
+    height:90vh;
+    margin:0;
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+    margin-bottom:15vh;
+
+}
+.fase-{
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+    width:100%;
+    height:100%;
+    flex-wrap:wrap;
+}
+
+.web-definde{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+    width:500px;
+    height:50vh;
+}
+.web-definde h2{
+    display:flex;
+    justify-content:center;
+    font-size:50px;
+    text-shadow:8px 8px 16px rgba(100,0,0,0.5);
+
+}
+.web-definde p{
+    display:flex;
+    justify-content:center;
+    font-size:25px;
+    text-shadow:8px 8px 16px rgba(100,0,0,0.5);
+
+}
+.image-definde{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    width:500px;
+    height:50vh;
+}
+.square{
+    width:450px;
+    height:500px;
+    transform:rotate(45deg);
+    border-radius:20% 40%;
+    background-image:linear-gradient(-90deg,black,rgb(49, 2, 2),black,rgb(49, 2, 2));
+    box-shadow:8px 8px 16px 10px rgba(100,0,0,0.5);
+    overflow: hidden ;
+    animation:float 3s linear 2s normal both infinite;
+
+}
+@keyframes float{
+    0%{
+        transform:rotate(45deg) translateY(0) translateX(0);
+    }
+    50%{
+        transform:rotate(45deg) translateY(10px) translateX(10px);
+    }
+    100%{
+        transform:rotate(45deg) translateY(0) translateX(0);
+    }
+}
+.square img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    transform:rotate(-45deg) scale(1.2);
+
+}
+
+/* for me section two */
+.for-me{
+    width:100%;
+    height:100%;
+    margin:0;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-wrap:wrap;
+    background-image:linear-gradient(-45deg,rgb(55, 2, 2),black,black,rgb(55, 2, 2));
+    color:white;
+}
+.title-me h1{
+    font-size:50px;
+    padding:20px;
+}
+.items-me{
+    width:100%;
+    height:100%;
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+    flex-wrap:wrap;
+}
+.Personal-information{
+    display:flex;
+    justify-content:center;
+    width:500px;
+    margin-left:30px;
+    margin-bottom:50px;
+    padding:10px;
+    color:rgb(255, 255, 255);
+    background-color:rgba(80, 0, 0, 0.4);
+    border-radius:10%;
+}
+.title-list{
+    font-size:35px;
+}
+.Personal-information ul li{
+    list-style:circle;
+    margin-bottom:20px;
+    font-size:25px;
+}
+.foto-from-job{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    width:70vh;
+    height:70vh;
+    margin-bottom:100px;
+    position:relative;
+}
+.image-programming{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    flex:0 0 500px;
+    border-radius:10%;
+    box-shadow:0 8px 10px rgba(100,0,0,0.5);
+}
+.image-p3{
+    background-image:linear-gradient(rgba(20,0,0,0.4),rgba(20,0,0,0.4)),url("foto/foto.jpg");
+    background-size: cover;
+    border-radius:10%;
+    background-position: center;
+}
+/* me job section three */
+.my-jobs{
+    display:flex;
+    justify-content:center;
+    flex-direction:column;
+}
+.title-jobs{
+    display:flex;
+    justify-content:center;
+}
+.title-jobs h2{
+    font-size:50px;
+}
+.dad-container{
+    display:flex;
+    align-items:center;
+    overflow: hidden;
+    width:100%;
+}
+.son-container{
+    display:flex;
+    width: max-content;
+    gap:10px;
+    animation: scrollInfinite 20s linear infinite;
+}
+.slider{
+    width:500px;
+    height:70vh;
+    padding:0 ;
+    margin:0 10px;
+    flex-shrink: 0;
+    position:relative;
+}
+.shadow{
+    position:absolute;
+    left:0;
+    top:0;
+    width: 100%;
+    height:100%;
+    border-radius:10%;
+    background-color:rgba(0,0,0,0.5);
+}
+.slider img{
+    width:100%;
+    height:100%;
+    display: block;
+    object-fit:cover;
+    border-radius:10%;
+    box-shadow:5px 5px 10px rgba(0,0,0,0.5);
+}
+@keyframes scrollInfinite {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    /* نتحرك بمقدار -50% لأننا كررنا العناصر مرتين في الـ HTML */
+    transform: translateX(-50%); 
+  }
+}
+
+/* اختياري: إيقاف الحركة مؤقتاً عند وضع مؤشر الماوس فوق الشريط */
+.dad-container:hover .son-container {
+  animation-play-state: paused;
+}
+/* call me section four */
+.call-me{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    width:100%;
+    height:500px;
+    background-image:linear-gradient(45deg,rgb(55, 2, 2),black,black,rgb(55, 2, 2));
+    margin-top:20px;
+}
+.call-me-{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+    gap:40px;
+}
+.text-me .text{
+    width:600px;
+    height:300px;
+    border-radius:10px;
+    color:white;
+    background-color:rgb(42, 0, 0);
+    box-shadow:inset 3px 3px 20px 13px rgba(0,0,0,0.5);
+    border-color:black;
+    border: none;       /* لإزالة الإطار الافتراضي الأساسي */
+    outline: none;
+    resize: none;
+    margin:20px;
+}
+.my-acounte{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    margin:20px;
+    gap:20px;
+}
+
+
+/* hover and active */
+.items  .link-here:hover,.items:hover{
+    transition:0.5s;
+    border-color:var(--red---);
+    color:var(--red---);
+}
+.image-programming:hover{
+    transform:scale(1.02);
+}
+.text:hover{
+    box-shadow:3px 3px 16px rgba(134, 0, 0, 0.699),inset 3px 3px 20px 13px rgba(0,0,0,0.5);
+    transform:scale(1.01);
+}
+.text:focus{
+    border:2px solid rgb(91, 0, 0);
+}
+.list:hover ,.list-fa-mixer:hover,.list-fa-bars:hover{
+    cursor:pointer;
+}
+
+
+@media (max-width:768px){
+    /* header */
+    .header{
+        position:relative;
+    }
+    .list{
+        opacity: 0;
+        visibility: hidden;
+        transform: left 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        position:absolute;
+        flex-direction:column;
+        right:40px;
+        top:40px;
+        background-color:black;
+        padding:10px 10px;
+        border-radius:10px;
+    }
+    .list.show{
+        opacity: 1;
+        visibility: visible;
+    }
+    .list-fa-bars{
+        display:flex;
+    }
+    .list-fa-mixer{
+        display:none;
+    }
+    .list-fa-mixer.show{
+        display:flex;
+    }
+    .list-fa-bars.show{
+        display:none;
+    }
+    /* section one fase */
+    .web-definde h2{
+        font-size:40px;
+    }
+    .web-definde p{
+        font-size:20px;
+    }
+    .square{
+        width:70vw;
+        height:80vw;
+        margin:0;
+    }
+    .fase{
+        margin-bottom:30vh;
+    }
+    /* section two for me */
+    .title-me h1{
+        font-size:35px;
+    }
+    .title-list{
+        font-size:25px;
+    }
+    .Personal-information {
+        justify-content:left;
+    }
+    .Personal-information ul li{
+        font-size:20px;
+    }
+    .Personal-information{
+        width:60%;
+    }
+    .foto-from-job{
+        width:80%;
+        height:50vh;
+    }
+    /* section three jobs */
+    .title-jobs h2{
+        font-size:35px;
+    }
+    .slider{
+        width:90vw;
+        transition:10s;
+    }
+    /*  footer call me */
+    .text-me .text{
+        width:85vw;
+    }
+    
+
+}
